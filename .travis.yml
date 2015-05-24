@@ -1,0 +1,15 @@
+language: php
+php:
+  - 5.5
+  - 5.6
+  - hhvm
+  - nightly
+
+before_script:
+    - composer install --dev -v --prefer-source
+#    - phantomjs --webdriver=4444 > /dev/null 2>&1 &
+#    - php -S localhost:8080 -t web > /dev/null 2>&1 &
+
+script:
+    - bin/phpspec run -fpretty --verbose
+    - bin/pixci greet world

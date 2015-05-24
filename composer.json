@@ -1,0 +1,12 @@
+{
+    "autoload": {
+        "psr-0": { "": "src/" }
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "require": {
+        "mnapoli/silly": "^1.1",
+        "phpspec/phpspec": "^2.2"
+    }
+}
