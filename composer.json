@@ -1,6 +1,8 @@
 {
     "autoload": {
-        "psr-0": { "": "src/" }
+        "psr-4": {
+            "Pixci\\": "src/"
+        }
     },
     "config": {
         "bin-dir": "bin"

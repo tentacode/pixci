@@ -1,24 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-use Symfony\Component\Console\Output\OutputInterface;
-
 $loader = require __DIR__.'/../vendor/autoload.php';
 
-$app = new Silly\Application();
-
-$app->command('greet [name] [--yell]', function ($name, $yell, OutputInterface $output) {
-    if ($name) {
-        $text = 'Hello, '.$name;
-    } else {
-        $text = 'Hello';
-    }
-
-    if ($yell) {
-        $text = strtoupper($text);
-    }
-
-    $output->writeln($text);
-});
-
+$app = new Pixci\Application();
 $app->run();

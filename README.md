@@ -1,5 +1,5 @@
 ![Travis status](https://travis-ci.org/tentacode/pixci.svg?branch=master)
-# pixci
+# Pixci
 
 Pixel Perfect Continuous Integration
 
