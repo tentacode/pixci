@@ -1,0 +1,9 @@
+pixci_directory: pixci
+base_url: 'http://localhost'
+contexts:
+    default:
+        viewport: [1080, 768]
+pages:
+    landing:
+        contexts: [default]
+        url: /
